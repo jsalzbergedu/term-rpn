@@ -1,0 +1,10 @@
+[package]
+name = "term-rpn"
+version = "0.1.0"
+authors = ["Jacob Salzberg <jsalzbergedu@yahoo.com>"]
+
+[dependencies]
+
+[[bin]]
+name = "rpn"
+path = "src/main.rs"
