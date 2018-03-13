@@ -21,6 +21,28 @@ rpn 3 4 a
 # prints 7
 ```
 
+### Multiple entries
+Since the calculator is stack based, you can enter multiple numbers like so:
+
+(3 + 4) / 10:
+```bash
+rpn 3 4 a 10 d
+```
+
+((3 + 4) / 10) * (10 / 2):
+```bash
+rpn 3 4 a 10 d 10 2 d m
+```
+
+### Floating points
+Rpn uses integers, unless you type floating point numbers:
+```bash
+rpn 1 2 d
+# prints 0
+rpn 1.0 2 d
+# prints .5
+```
+
 ## Installing
 
 Clone this directory, and run `cargo-install`.
